@@ -1,6 +1,7 @@
-from models.enums.sexo import Sexo
-from models.endereco import Endereco
-from models.enums.unidade_federativa import UnidadeFederativa
+from Myproject.models.enums.sexo import Sexo
+from Myproject.models.endereco import Endereco
+from Myproject.models.enums.unidade_federativa import UnidadeFederativa
+
 class Pessoa:
     def __init__(self,id: int, nome: str, dataNascimento: str, telefone: str, email: str, idade: int, sexo: Sexo, endereco: Endereco, unidadeFederativa: UnidadeFederativa) -> None:
         self.id = id
