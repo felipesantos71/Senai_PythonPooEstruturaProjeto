@@ -9,10 +9,18 @@ class Pessoa:
         self.dataNascimento = dataNascimento
         self.telefone = telefone
         self.email = email
-        self.idade = idade
+        self.idade = self._verificar_idade(idade)
         self.sexo = sexo
         self.endereco = endereco
         self.unidadeFederativa = unidadeFederativa
+        
+    def _verificar_idade(self, idade):
+        if idade < 0:
+            raise ValueError("Idade não pode ser negativa.")
+        if not isinstance(idade, int):
+            raise TypeError("A idade dece conter apenas números")
+
+        return idade 
 
     def __str__(self) -> str:
         return (f"\nID: {self.id}"
