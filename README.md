@@ -9,3 +9,4 @@
 - <p4>IDE codespace Github com extensões de python e pytest</p4>
 
 ![Static Badge](https://img.shields.io/badge/PYTHON-blue?style=flat&logo=python&labelColor=black)
+![Static Badge](https://img.shields.io/badge/pytest-blue?style=flat&logo=pytest&labelColor=black)
